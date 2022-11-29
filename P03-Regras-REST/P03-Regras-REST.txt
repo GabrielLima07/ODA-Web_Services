@@ -1,4 +1,4 @@
-Explique quais são as seis regras de uma API REST.
+SEIS REGRAS DE UMA API REST
 
 - Stateless (sem estado)
 	O sistema não pode ter sessões criadas/amarradas para o cliente.
