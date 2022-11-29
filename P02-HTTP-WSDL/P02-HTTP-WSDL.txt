@@ -1,0 +1,88 @@
+==================================================================================================
+
+Métodos HTTP: GET / POST / PUT / DELETE / HEAD / CONNECT / OPTIONS / TRACE
+
+--------------------------------------------------------------------------------------------------
+
+-GET
+Solicita uma representação do recurso especificado. Essas solicitações só devem recuperar dados.
+Exemplo: GET /index.html
+
+--------------------------------------------------------------------------------------------------
+
+-POST
+Serve para enviar informações ao serviço, enviando informação à página.
+Exemplo: 
+POST / HTTP/1.1
+Host: abc.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+
+say=Hi&to=Them
+
+--------------------------------------------------------------------------------------------------
+
+-PUT
+Utilizado quando é feita algum tipo de atualização.
+Exemplo:
+PUT /new.html HTTP/1.1
+Host: anyrandomhost.com
+Content-type: text/html
+Content-Length: 22
+
+<span>VINICIUS</span>
+
+--------------------------------------------------------------------------------------------------
+
+-DELETE
+Remove um recurso especificado.
+Exemplo:
+DELETE /thisfile.html HTTP/1.1
+
+--------------------------------------------------------------------------------------------------
+
+-HEAD
+Solicita os cabeçalhos retornados de um recurso especifico que requisitado por um método HTTP GET.
+Exemplo:
+HEAD /index.html
+
+--------------------------------------------------------------------------------------------------
+
+-CONNECT
+Estabelece um túnel para o servidor identificado pelo recurso de destino.
+Exemplo:
+CONNECT servidor.teste.softexrecife.com:80 HTTP/1.1
+Host: servidor.teste.softexrecife.com:80
+Proxy-Authorization: basic aGVsbG86d29ybGQ=
+
+--------------------------------------------------------------------------------------------------
+
+-OPTIONS
+Usado para descrever as opções de comunicação com o recurso de destino.
+Exemplo:
+curl -X OPTIONS http://vinicius.org -i
+
+--------------------------------------------------------------------------------------------------
+
+-TRACE
+Executa um teste de chamada loop-back junto com o caminho para o recurso de destino.
+Exemplo:
+TRACE /index.html
+
+--------------------------------------------------------------------------------------------------
+
+==================================================================================================
+
+
+
+==================================================================================================
+
+WSDL - Web Service Description Language (Linguagem de descrição de web service)
+
+Web Service Description Language é uma notação XML que serve para descrever um serviço da web.
+Através da WSDL informa-se o cliente:
+-Como cada serviço e o end-point deve ser chamado;
+-Quais os parâmetros e tipos de dados esperados;
+-Qual o tipo de dado do retorno será enviado como resposta.
+
+==================================================================================================
