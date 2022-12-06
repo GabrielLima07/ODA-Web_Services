@@ -1,0 +1,22 @@
+[POST] http://localhost:3000/livraria/
+{
+"ISBN":8556510787,
+"Nome":"A Game of Thrones",
+"Autor":"George R. R. Martin"
+}
+
+-------------------------------------------------------
+
+[GET] http://localhost:3000/livraria/8556510787
+
+-------------------------------------------------------
+
+[PUT] http://localhost:3000/livraria/
+{
+"ISBN":8556510787,
+"Nome":"A Guerra dos Tronos"
+}
+
+-------------------------------------------------------
+
+[DELETE] http://localhost:3000/livraria/8556510787
